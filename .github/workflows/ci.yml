@@ -9,4 +9,4 @@ jobs:
         with:
           java-version: 17
       - name: build
-        run: ./gradlrew build
+        run: ./gradlew build
