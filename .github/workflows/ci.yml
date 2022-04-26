@@ -9,4 +9,5 @@ jobs:
         with:
           java-version: 17
       - name: build
+        run: ls
         run: ./gradlew build
