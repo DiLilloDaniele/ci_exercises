@@ -3,10 +3,10 @@ on:
   push:
 jobs:
   Build:
-    - name: Checkout
-      uses: actions/checkout@v2
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Preparing
         uses: joschi/setup-jdk@v2.3.0
         with:
