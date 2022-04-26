@@ -1,0 +1,12 @@
+name: Clone Repository
+on:
+  push: # On every push on any branch
+jobs:
+  Build: # Job name
+    runs-on: ubuntu-latest # Operating system selection
+    steps:
+    - name: Checkout # custom name Checkout the repository
+      with:
+        java-version: 15
+    - name: Build
+      run: ./gradlew check
